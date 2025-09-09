@@ -1,16 +1,23 @@
-# Password Generator Android
+# 🔐 Password Generator Android
 
-Um aplicativo Android simples para gerar senhas seguras de forma rápida, desenvolvido em **Kotlin** com interface em **XML**.
+A **simple and secure password generator app** for Android, built with **Kotlin** and **XML**.  
+Generate strong passwords in seconds with a clean and intuitive interface!  
 
-## Funcionalidades
+---
 
-- Geração de senhas aleatórias.
-- Personalização do tamanho da senha.
-- Inclusão opcional de letras maiúsculas, números e símbolos.
-- Interface intuitiva e fácil de usar.
+## ✨ Features
 
-## Tecnologias Utilizadas
+- Generate **random secure passwords** instantly  
+- Customize **password length**  
+- Include **uppercase letters, numbers, and symbols**  
+- **Clean and user-friendly UI**  
 
-- **Kotlin** – Linguagem principal do aplicativo.
-- **XML** – Para a construção da interface do usuário.
-- **Android Studio** – IDE utilizada para desenvolvimento.
+---
+
+## 🛠 Technologies Used
+
+- **Kotlin** – Main programming language  
+- **XML** – UI design  
+- **Android Studio** – Development IDE  
+
+---
