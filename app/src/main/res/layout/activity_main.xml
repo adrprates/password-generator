@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171515"
+    android:padding="6dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PASSWORD GENERATOR"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:fontFamily="@font/merienda_bold"
+        android:textColor="@color/white"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/passwordBackground"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@android:color/white"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:fontFamily="sans-serif"
+            android:text="senha muito louca 12334534"
+            android:textColor="#171515"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/infoBackground"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/passwordBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/merienda_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="Uppercase"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/uppercase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:checked="true"
+                        app:thumbTint="@color/white"
+                        app:trackTint="#0081FF" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/merienda_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="Numbers"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/numbers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:checked="true"
+                        app:thumbTint="@color/white"
+                        app:trackTint="#0081FF" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/merienda_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="Special Characters"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/specialCharacter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:checked="true"
+                        app:thumbTint="@color/white"
+                        app:trackTint="#0081FF" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/merienda_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="Exclude Similar Characters"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/excludeSimilar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:checked="true"
+                        app:thumbTint="@color/white"
+                        app:trackTint="#0081FF" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:backgroundTint="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/merienda_bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="Length"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"/>
+
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:max="30"
+                        android:progress="10"
+                        android:thumbTint="@color/white"
+                        android:progressTint="#0081FF"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@android:color/transparent">
+
+                <Button
+                    android:id="@+id/generate"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Generate"
+                    android:textSize="16dp"
+                    android:backgroundTint="#0081FF"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@android:color/transparent">
+
+                <Button
+                    android:id="@+id/copy"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Copy"
+                    android:textSize="15dp"
+                    android:backgroundTint="#0081FF"/>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">password_generator</string>
+    <string name="length_label">Length: %d</string>
+</resources>
