@@ -1,7 +1,7 @@
 # 🔐 Password Generator Android
 
 <div align="center">
-  <img src="app/src/main/res/layout.JPG" alt="layout" width="400"/>
+  <img src="app/src/main/res/layout.jpg" alt="layout" width="400"/>
 </div>
 
 A **simple and secure password generator app** for Android, built with **Kotlin** and **XML**.  
